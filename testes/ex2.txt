@@ -1,0 +1,7 @@
+000 E000 IN (Le entrada do usuario)
+001 4100 STOR M(temp) (Guarda em temp)
+002 E000 IN (Le outra entrada do usuario)
+003 6100 ADD M(temp) (Soma com temp)
+004 F000 OUT (Escreve na saida do usuario)
+005 0000 HALT (Finaliza)
+100 0000 @ temp (Variavel temporaria)

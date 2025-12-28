@@ -1,0 +1,34 @@
+000 1101 LOAD M(counter_1)
+001 7100 SUB M(const_1)
+002 4101 STOR M(counter_1)
+003 D005 JPOS M(do_1)
+004 A00C JMP M(loop_2)
+005 E000 IN
+006 4106 STOR M(arr)
+007 1104 LOAD M(arr_ptr_1)
+008 6100 ADD M(const_1)
+009 4104 STOR M(arr_ptr_1)
+00A 5006 STA M(store_arr)
+00B A000 JMP M(loop_1)
+00C 1102 LOAD M(counter_2)
+00D 7100 SUB M(const_1)
+00E 4102 STOR M(counter_2)
+00F D013 JPOS M(load_arr)
+010 1103 LOAD M(result)
+011 F000 OUT
+012 0000 HALT
+013 1106 LOAD M(arr)
+014 6103 ADD M(result)
+015 4103 STOR M(result)
+016 1105 LOAD M(arr_ptr_2)
+017 6100 ADD M(const_1)
+018 4105 STOR M(arr_ptr_2)
+019 5013 STA M(load_arr)
+01A A00C JMP M(loop_2)
+100 0001 const_1
+101 0003 counter_1
+102 0003 counter_2
+103 0000 result
+104 0106 arr_ptr_1
+105 0106 arr_ptr_2
+106 0000 arr (start)
